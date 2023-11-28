@@ -1,0 +1,30 @@
+@use 'customs' as c;
+@use 'globals';
+@use 'login_form';
+
+
+
+// menu 
+.menu-items {
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+// carousel
+.c-item {
+    height: clamp(240px, 40vw, 420px);
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.showcase {
+    background-color: c.$gray-200;
+}
+
+
+// TESSSST
