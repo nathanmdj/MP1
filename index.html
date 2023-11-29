@@ -11,7 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-
+   
     <title>Document</title>
 </head>
 <body>
@@ -75,19 +75,19 @@
               <i class="bi bi-x"></i>
             </button>
             <p class="title">Login</p>         
-            <form class="form">
+            <form class="form" onsubmit="login(event)">
               <div class="input-group">
                 <label for="username">Username</label>
                 <input type="text" name="username" id="username" placeholder="" >
               </div>
               <div class="input-group">
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="" required>
+                <input type="password" name="password" id="password" placeholder="" >
                 <div class="forgot">
                   <a rel="noopener noreferrer" href="#">Forgot Password?</a>
                 </div>
               </div>
-              <button type="submit" class="sign">Sign in</button>
+              <button  class="sign">Sign in</button>
             </form>
             <div class="social-message">
               <div class="line"></div>
@@ -228,6 +228,6 @@
       </footer>
     </div>
 
-    
+    <script src="app/js/login.js"></script>
 </body>
 </html>
