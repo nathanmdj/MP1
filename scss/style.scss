@@ -1,7 +1,7 @@
 @use 'customs' as c;
 @use 'globals';
 @use 'login_form';
-
+@use 'products';
 
 
 // menu 
@@ -22,9 +22,9 @@
     object-fit: cover;
 }
 
-.showcase {
-    background-color: c.$gray-200;
+
+// product filter
+.filter {
+    width: 300px;
 }
-
-
 // TESSSST

@@ -1,0 +1,26 @@
+@media (min-width: 576px) {
+    
+    .product-card{
+        padding: 10px;
+        border: none;
+        width: clamp(175px, calc(150px + 10vw), 256px) !important;
+    }
+}
+
+.product-section {
+
+    .filter {
+        min-width: 220px;
+        height: 70vh;
+    }
+
+    i {
+        font-size: 1.4rem;
+    }
+
+    .product-card {
+        
+        width: 175px;
+    }
+}
+
