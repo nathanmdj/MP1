@@ -1,9 +1,8 @@
+@use 'customs' as c;
+
 @media (min-width: 576px) {
-    
-    .product-card{
-        padding: 10px;
-        border: none;
-        width: clamp(175px, calc(150px + 10vw), 256px) !important;
+    .product-card {
+        width: clamp(175px, calc(120px + 10vw), 260px) !important;
     }
 }
 
@@ -11,16 +10,48 @@
 
     .filter {
         min-width: 220px;
-        height: 70vh;
+        
     }
 
     i {
         font-size: 1.4rem;
-    }
-
+    }    
+    
     .product-card {
-        
         width: 175px;
+
+        .card-body {
+            padding: 10px;
+        }
+        .card-footer {
+            background: none !important;
+            border: none;
+            padding: 10px;
+            padding-top: 0;
+        }
     }
 }
 
+.btn-container{
+    display: flex;
+    justify-content: center;
+
+    >:nth-child(1) {
+        padding-inline: 20px;
+        width: 75%;
+    }
+
+    .buy-btn {
+        padding-block: 5px;
+        
+    
+        i {
+            font-size: 1rem;
+        }
+    }
+}
+
+.btn-info:hover {
+    background-color: c.$primary;
+    border-color: c.$primary;
+}
