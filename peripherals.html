@@ -16,56 +16,80 @@
 </head>
 
 <body>
+  <header class="fixed-top">
     <!-- NAVBAR -->
-    <nav class="navbar pt-3 pb-3 navbar-dark bg-secondary ">
-      <div class="container-md d-flex">
-        <div class="d-flex gap-2 align-items-center">
-          <button class="navbar-toggler d-md-none pe-2 ps-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          <div>
-            <a class="navbar-brand" href="#">LOGO</a>    
-          </div>
-
-        </div>
-        <!-- logo -->
-        <div class="sign-in-logo gap-2 d-flex">
-          <a class="" href="">
-            <i class="bi bi-cart4"></i>
-          </a>
+  <nav class="navbar pt-3 pb-3 navbar-dark bg-secondary ">
+    <div class="container-md d-flex">
+      <div class="d-flex gap-2 align-items-center">
+        <button class="navbar-toggler d-md-none pe-2 ps-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         
-          <button class="border-0 bg-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <i class="bi bi-person"></i>
-            <span>Login</span>
-          </button>
-
-        </div>
-
-          <!-- menu -->
-        <div class="collapse navbar-collapse navbar-hide d-md-none" id="navbar-items">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="desktop.html">Desktop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="laptop.html">Laptop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Peripherals</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="components.html">Components</a>
-            </li>   
-          </ul>    
+        <div>
+          <a class="navbar-brand" href="#">LOGO</a>    
         </div>
 
       </div>
-    </nav>
+      <!-- logo -->
+      <div class="sign-in-logo gap-2 d-flex">
+        <a class="" href="">
+          <i class="bi bi-cart4"></i>
+        </a>
+      
+        <button class="border-0 bg-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <i class="bi bi-person"></i>
+          <span>Login</span>
+        </button>
+
+      </div>
+
+        <!-- menu -->
+      <div class="collapse navbar-collapse navbar-hide d-md-none" id="navbar-items">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="desktop.html">Desktop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="laptop.html">Laptop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Peripherals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="components.html">Components</a>
+          </li>   
+        </ul>    
+      </div>
+
+    </div>
+  </nav>
+
+  
+
+  <!-- MENU BAR -->
+  <div class=" p-3 p-md-0 d-flex align-items-center bg-body-secondary justify-content-center">
+    <div class="menu-items">
+      <ul class="nav justify-content-center d-none d-md-flex">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="desktop.html" class="nav-link active">Desktop</a></li>
+        <li><a href="laptop.html" class="nav-link active">Laptop</a></li>
+        <li><a href="#" class="nav-link active">Peripherals</a></li>
+        <li><a href="components.html" class="nav-link active">Components</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <form action="search.html" class="d-flex m-md-3 " role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-primary" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+  </header>
 
     <main>
       <!-- MODAL -->
@@ -119,48 +143,207 @@
         </div>
       </div>
 
-
-      <!-- MENU BAR -->
-      <div class=" p-3 p-md-0 d-flex align-items-center bg-body-secondary justify-content-center">
-        <div class="menu-items">
-          <ul class="nav justify-content-center d-none d-md-flex">
-            <li><a href="index.html" class="nav-link active">Home</a></li>
-            <li><a href="desktop.html" class="nav-link active">Desktop</a></li>
-            <li><a href="laptop.html" class="nav-link active">Laptop</a></li>
-            <li><a href="#" class="nav-link active">Peripherals</a></li>
-            <li><a href="components.html" class="nav-link active">Components</a></li>
-          </ul>
-        </div>
-        
-        <div>
-          <form action="products.html" class="d-flex m-md-3 " role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-primary" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-
       <!-- PRODUCT SECTION -->
       <section class="container-fluid p-0">
         <div class="container-md p-0">
           <h3 class="p-2">Peripherals</h3>
           <div class="product-section d-flex pb-5">
-            <div class="filter bg-body-tertiary p-2 d-none d-md-block">
+            <!-- filter side-bar -->
+            <div class="filter bg-body-tertiary p-2 d-none d-lg-block me-3">
 
             </div>
-            <div class="container-md d-flex flex-wrap justify-content-center justify-content-md-start p-0">
-              <div class="product-card card">
-                <img src="img/desktop01.png" alt="" class="product-img">
+
+            <div class="container-md d-flex flex-wrap justify-content-center justify-content-lg-start p-0 gap-1 gap-md-2">
+              
+              <div class=" card product-card">
+                <a href="description.html">
+                  <div class="card-img-container">
+                    <img src="img/peri01.jpg" alt="" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Redragon K617 FIZZ 60% Wired RGB Gaming Keyboard, 61 Keys Compact Mechanical Keyboard w/ White & Pink/ White & Grey Mixed-Colored Keycaps, Linear Red Switch</p>
+                  </div>
+                </a>
+                <div class="card-footer mt-auto">
+                  <h5 class="mb-0">&#8369; 1,280.00</h5>
+                  <div class="btn-container d-flex gap-1 mt-2">
+                    <button class="btn buy-btn btn-info">Buy Now</button>
+                    <button class="btn buy-btn btn-info"><i class="bi-cart-plus"></i></button>
+                  </div>
+                </div>
               </div>
-              <div class="product-card card">
-                <img src="img/desktop01.png" alt="" class="product-img">
+              
+              <div class=" card product-card">
+                <a href="description.html">
+                  <div class="card-img-container">
+                    <img src="img/peri02.jpg" alt="" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Redragon K606 LAKSHMI Mechanical Gaming Keyboard Red Switch Black</p>
+                  </div>
+                </a>
+                <div class="card-footer mt-auto">
+                  <h5 class="mb-0">&#8369; 1,080.00</h5>
+                  <div class="btn-container d-flex gap-1 mt-2">
+                    <button class="btn buy-btn btn-info">Buy Now</button>
+                    <button class="btn buy-btn btn-info"><i class="bi-cart-plus"></i></button>
+                  </div>
+                </div>
               </div>
-              <div class="product-card card">
-                <img src="img/desktop01.png" alt="" class="product-img">
+
+              
+              <div class=" card product-card">
+                <a href="description.html">
+                  <div class="card-img-container">
+                    <img src="img/peri03.jpg" alt="" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Redragon K645W-GB-RGB CASS Mechanical Gaming Keyboard</p>
+                  </div>
+                </a>
+                <div class="card-footer mt-auto">
+                  <h5 class="mb-0">&#8369; 2,103.00</h5>
+                  <div class="btn-container d-flex gap-1 mt-2">
+                    <button class="btn buy-btn btn-info">Buy Now</button>
+                    <button class="btn buy-btn btn-info"><i class="bi-cart-plus"></i></button>
+                  </div>
+                </div>
               </div>
-              <div class="product-card card">
-                <img src="img/desktop01.png" alt="" class="product-img">
+
+              <div class=" card product-card">
+                <a href="description.html">
+                  <div class="card-img-container">
+                    <img src="img/peri07.jpg" alt="" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Razer Naga Pro Modular Wireless Gaming Mouse with Swappable Side Plate w/ 2, 6, 12 Button Configurations, Focus+ 20K DPI Optical Sensor Fastest Gaming Mouse</p>
+                  </div>
+                </a>
+                <div class="card-footer mt-auto">
+                  <h5 class="mb-0">&#8369; 7,499.00</h5>
+                  <div class="btn-container d-flex gap-1 mt-2">
+                    <button class="btn buy-btn btn-info">Buy Now</button>
+                    <button class="btn buy-btn btn-info"><i class="bi-cart-plus"></i></button>
+                  </div>
+                </div>
               </div>
+              
+              <div class=" card product-card">
+                <a href="description.html">
+                  <div class="card-img-container">
+                    <img src="img/peri04.jpg" alt="" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">RRakk Alti BVR/ RGY Illuminated Gaming Mouse</p>
+                  </div>
+                </a>
+                <div class="card-footer mt-auto">
+                  <h5 class="mb-0">&#8369; 350.00</h5>
+                  <div class="btn-container d-flex gap-1 mt-2">
+                    <button class="btn buy-btn btn-info">Buy Now</button>
+                    <button class="btn buy-btn btn-info"><i class="bi-cart-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class=" card product-card">
+                <a href="description.html">
+                  <div class="card-img-container">
+                    <img src="img/peri05.webp" alt="" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Asus ROG Keris Wired RGB Gaming Mouse</p>
+                  </div>
+                </a>
+                <div class="card-footer mt-auto">
+                  <h5 class="mb-0">&#8369; 1,788.00</h5>
+                  <div class="btn-container d-flex gap-1 mt-2">
+                    <button class="btn buy-btn btn-info">Buy Now</button>
+                    <button class="btn buy-btn btn-info"><i class="bi-cart-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class=" card product-card">
+                <a href="description.html">
+                  <div class="card-img-container">
+                    <img src="img/peri06.webp" alt="" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Corsair M55 RGB Pro Ambidextrous Braided Fiber Cable 12400 dpi, Optical Wired Gaming Mouse CS-CH-9308011-AP 7UBE COCS2499</p>
+                  </div>
+                </a>
+                <div class="card-footer mt-auto">
+                  <h5 class="mb-0">&#8369; 2,100.00</h5>
+                  <div class="btn-container d-flex gap-1 mt-2">
+                    <button class="btn buy-btn btn-info">Buy Now</button>
+                    <button class="btn buy-btn btn-info"><i class="bi-cart-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class=" card product-card">
+                <a href="description.html">
+                  <div class="card-img-container">
+                    <img src="img/headset01.webp" alt="" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">ONIKUMA K10 RGB Gaming Headset</p>
+                  </div>
+                </a>
+                <div class="card-footer mt-auto">
+                  <h5 class="mb-0">&#8369; 789.00</h5>
+                  <div class="btn-container d-flex gap-1 mt-2">
+                    <button class="btn buy-btn btn-info">Buy Now</button>
+                    <button class="btn buy-btn btn-info"><i class="bi-cart-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class=" card product-card">
+                <a href="description.html">
+                  <div class="card-img-container">
+                    <img src="img/headset02.jpg" alt="" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Redragon H260 HYLAS RGB Backlighting Built-in volume adjustment Black, White and Pink Wired Gaming Headset</p>
+                  </div>
+                </a>
+                <div class="card-footer mt-auto">
+                  <h5 class="mb-0">&#8369; 739.00</h5>
+                  <div class="btn-container d-flex gap-1 mt-2">
+                    <button class="btn buy-btn btn-info">Buy Now</button>
+                    <button class="btn buy-btn btn-info"><i class="bi-cart-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class=" card product-card">
+                <a href="description.html">
+                  <div class="card-img-container">
+                    <img src="img/headset03.webp" alt="" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Galax HOF Maestro H1 7.1 Gaming Headset White</p>
+                  </div>
+                </a>
+                <div class="card-footer mt-auto">
+                  <h5 class="mb-0">&#8369; 3,980.00</h5>
+                  <div class="btn-container d-flex gap-1 mt-2">
+                    <button class="btn buy-btn btn-info">Buy Now</button>
+                    <button class="btn buy-btn btn-info"><i class="bi-cart-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              
+              
+    
             </div>
           </div>
         </div>

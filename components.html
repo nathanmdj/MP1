@@ -16,56 +16,80 @@
 </head>
 
 <body>
+  <header class="fixed-top">
     <!-- NAVBAR -->
-    <nav class="navbar pt-3 pb-3 navbar-dark bg-secondary ">
-      <div class="container-md d-flex">
-        <div class="d-flex gap-2 align-items-center">
-          <button class="navbar-toggler d-md-none pe-2 ps-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          <div>
-            <a class="navbar-brand" href="#">LOGO</a>    
-          </div>
-
-        </div>
-        <!-- logo -->
-        <div class="sign-in-logo gap-2 d-flex">
-          <a class="" href="">
-            <i class="bi bi-cart4"></i>
-          </a>
+  <nav class="navbar pt-3 pb-3 navbar-dark bg-secondary ">
+    <div class="container-md d-flex">
+      <div class="d-flex gap-2 align-items-center">
+        <button class="navbar-toggler d-md-none pe-2 ps-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         
-          <button class="border-0 bg-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <i class="bi bi-person"></i>
-            <span>Login</span>
-          </button>
-
-        </div>
-
-          <!-- menu -->
-        <div class="collapse navbar-collapse navbar-hide d-md-none" id="navbar-items">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="desktop.html">Desktop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="laptop.html">Laptop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="peripherals.html">Peripherals</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Components</a>
-            </li>   
-          </ul>    
+        <div>
+          <a class="navbar-brand" href="#">LOGO</a>    
         </div>
 
       </div>
-    </nav>
+      <!-- logo -->
+      <div class="sign-in-logo gap-2 d-flex">
+        <a class="" href="">
+          <i class="bi bi-cart4"></i>
+        </a>
+      
+        <button class="border-0 bg-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <i class="bi bi-person"></i>
+          <span>Login</span>
+        </button>
+
+      </div>
+
+        <!-- menu -->
+      <div class="collapse navbar-collapse navbar-hide d-md-none" id="navbar-items">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="desktop.html">Desktop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="laptop.html">Laptop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="peripherals.html">Peripherals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Components</a>
+          </li>   
+        </ul>    
+      </div>
+
+    </div>
+  </nav>
+
+  
+
+  <!-- MENU BAR -->
+  <div class=" p-3 p-md-0 d-flex align-items-center bg-body-secondary justify-content-center">
+    <div class="menu-items">
+      <ul class="nav justify-content-center d-none d-md-flex">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="desktop.html" class="nav-link active">Desktop</a></li>
+        <li><a href="laptop.html" class="nav-link active">Laptop</a></li>
+        <li><a href="peripherals.html" class="nav-link active">Peripherals</a></li>
+        <li><a href="#" class="nav-link active">Components</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <form action="search.html" class="d-flex m-md-3 " role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-primary" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+  </header>
 
     <main>
       <!-- MODAL -->
@@ -119,48 +143,209 @@
         </div>
       </div>
 
-
-      <!-- MENU BAR -->
-      <div class=" p-3 p-md-0 d-flex align-items-center bg-body-secondary justify-content-center">
-        <div class="menu-items">
-          <ul class="nav justify-content-center d-none d-md-flex">
-            <li><a href="index.html" class="nav-link active">Home</a></li>
-            <li><a href="desktop.html" class="nav-link active">Desktop</a></li>
-            <li><a href="laptop.html" class="nav-link active">Laptop</a></li>
-            <li><a href="peripherals.html" class="nav-link active">Peripherals</a></li>
-            <li><a href="#" class="nav-link active">Components</a></li>
-          </ul>
-        </div>
-        
-        <div>
-          <form action="products.html" class="d-flex m-md-3 " role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-primary" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-
       <!-- PRODUCT SECTION -->
       <section class="container-fluid p-0">
         <div class="container-md p-0">
           <h3 class="p-2">Components</h3>
           <div class="product-section d-flex pb-5">
-            <div class="filter bg-body-tertiary p-2 d-none d-md-block">
+            <!-- filter side-bar -->
+            <div class="filter bg-body-tertiary p-2 d-none d-lg-block me-3">
 
             </div>
-            <div class="container-md d-flex flex-wrap justify-content-center justify-content-md-start p-0">
-              <div class="product-card card">
-                <img src="img/desktop01.png" alt="" class="product-img">
+
+            <div class="container-md d-flex flex-wrap justify-content-center justify-content-lg-start p-0 gap-1 gap-md-2">
+              
+              <div class=" card product-card">
+                <a href="description.html">
+                  <div class="card-img-container">
+                    <img src="img/comp01.webp" alt="" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Keytech Storm X3 v2 3in1 120mm Chassis Fan with Control Hub and Remote Control ARGB</p>
+                  </div>
+                </a>
+                <div class="card-footer mt-auto">
+                  <h5 class="mb-0">&#8369; 485.00</h5>
+                  <div class="btn-container d-flex gap-1 mt-2">
+                    <button class="btn buy-btn btn-info">Buy Now</button>
+                    <button class="btn buy-btn btn-info"><i class="bi-cart-plus"></i></button>
+                  </div>
+                </div>
               </div>
-              <div class="product-card card">
-                <img src="img/desktop01.png" alt="" class="product-img">
+              
+              <div class=" card product-card">
+                <a href="description.html">
+                  <div class="card-img-container">
+                    <img src="img/comp02.jpg" alt="" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Team Elite TForce Delta 16gb 2x8 3200mhz Ddr4 RGB Memory White</p>
+                  </div>
+                </a>
+                <div class="card-footer mt-auto">
+                  <h5 class="mb-0">&#8369; 3,105.00</h5>
+                  <div class="btn-container d-flex gap-1 mt-2">
+                    <button class="btn buy-btn btn-info">Buy Now</button>
+                    <button class="btn buy-btn btn-info"><i class="bi-cart-plus"></i></button>
+                  </div>
+                </div>
               </div>
-              <div class="product-card card">
-                <img src="img/desktop01.png" alt="" class="product-img">
+
+              
+              <div class=" card product-card">
+                <a href="description.html">
+                  <div class="card-img-container">
+                    <img src="img/comp03.png" alt="" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Asrock RX 6600 8G CHALLENGER D 8gb 128bit GDdr6 Dual Fan Design, Super Alloy Striped Axial Fan Gaming Videocard</p>
+                  </div>
+                </a>
+                <div class="card-footer mt-auto">
+                  <h5 class="mb-0">&#8369; 11,500.00</h5>
+                  <div class="btn-container d-flex gap-1 mt-2">
+                    <button class="btn buy-btn btn-info">Buy Now</button>
+                    <button class="btn buy-btn btn-info"><i class="bi-cart-plus"></i></button>
+                  </div>
+                </div>
               </div>
-              <div class="product-card card">
-                <img src="img/desktop01.png" alt="" class="product-img">
+
+              
+              <div class=" card product-card">
+                <a href="description.html">
+                  <div class="card-img-container">
+                    <img src="img/comp04.webp" alt="" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Team Group GX2 512GB Sata III 2.5 Solid State Drive</p>
+                  </div>
+                </a>
+                <div class="card-footer mt-auto">
+                  <h5 class="mb-0">&#8369; 1,699.00</h5>
+                  <div class="btn-container d-flex gap-1 mt-2">
+                    <button class="btn buy-btn btn-info">Buy Now</button>
+                    <button class="btn buy-btn btn-info"><i class="bi-cart-plus"></i></button>
+                  </div>
+                </div>
               </div>
+
+              
+              <div class=" card product-card">
+                <a href="description.html">
+                  <div class="card-img-container">
+                    <img src="img/comp05.png" alt="" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Asus Prime A520M-K Socket AM4 Ddr4Gaming Motherboard</p>
+                  </div>
+                </a>
+                <div class="card-footer mt-auto">
+                  <h5 class="mb-0">&#8369; 3,985.00</h5>
+                  <div class="btn-container d-flex gap-1 mt-2">
+                    <button class="btn buy-btn btn-info">Buy Now</button>
+                    <button class="btn buy-btn btn-info"><i class="bi-cart-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class=" card product-card">
+                <a href="description.html">
+                  <div class="card-img-container">
+                    <img src="img/comp06.webp" alt="" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Intel Core i7-14700K Raptor Lake Socket LGA 1700 5.20GHz Processor</p>
+                  </div>
+                </a>
+                <div class="card-footer mt-auto">
+                  <h5 class="mb-0">&#8369; 26,495.00</h5>
+                  <div class="btn-container d-flex gap-1 mt-2">
+                    <button class="btn buy-btn btn-info">Buy Now</button>
+                    <button class="btn buy-btn btn-info"><i class="bi-cart-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class=" card product-card">
+                <a href="description.html">
+                  <div class="card-img-container">
+                    <img src="img/comp07.webp" alt="" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Intel Core i5-14600K Raptor Lake Socket LGA 1700 2.50GHz Processor</p>
+                  </div>
+                </a>
+                <div class="card-footer mt-auto">
+                  <h5 class="mb-0">&#8369; 20,189.00</h5>
+                  <div class="btn-container d-flex gap-1 mt-2">
+                    <button class="btn buy-btn btn-info">Buy Now</button>
+                    <button class="btn buy-btn btn-info"><i class="bi-cart-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class=" card product-card">
+                <a href="description.html">
+                  <div class="card-img-container">
+                    <img src="img/comp08.webp" alt="" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Ovation ACC 240mm Liquid Cooling RGB with Digital Temp. Display White</p>
+                  </div>
+                </a>
+                <div class="card-footer mt-auto">
+                  <h5 class="mb-0">&#8369; 3,185.00</h5>
+                  <div class="btn-container d-flex gap-1 mt-2">
+                    <button class="btn buy-btn btn-info">Buy Now</button>
+                    <button class="btn buy-btn btn-info"><i class="bi-cart-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class=" card product-card">
+                <a href="description.html">
+                  <div class="card-img-container">
+                    <img src="img/comp09.png" alt="" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Asrock B760M PG Lightning DDR4 Socket LGA 1700 Ddr4 Gaming Motherboard</p>
+                  </div>
+                </a>
+                <div class="card-footer mt-auto">
+                  <h5 class="mb-0">&#8369; 6,785.00</h5>
+                  <div class="btn-container d-flex gap-1 mt-2">
+                    <button class="btn buy-btn btn-info">Buy Now</button>
+                    <button class="btn buy-btn btn-info"><i class="bi-cart-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class=" card product-card">
+                <a href="description.html">
+                  <div class="card-img-container">
+                    <img src="img/comp10.webp" alt="" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">G.Skill Trident Z Neo 16gb 2x8 3600mhz Ddr4 RGB Memory</p>
+                  </div>
+                </a>
+                <div class="card-footer mt-auto">
+                  <h5 class="mb-0">&#8369; 3,969.00</h5>
+                  <div class="btn-container d-flex gap-1 mt-2">
+                    <button class="btn buy-btn btn-info">Buy Now</button>
+                    <button class="btn buy-btn btn-info"><i class="bi-cart-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              
+              
+    
             </div>
           </div>
         </div>

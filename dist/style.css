@@ -12174,6 +12174,7 @@ li {
 }
 .product-section .product-card {
   width: 175px;
+  min-height: 440px;
 }
 .product-section .product-card .card-body {
   padding: 10px;
