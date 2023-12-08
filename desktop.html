@@ -32,7 +32,7 @@
         </div>
         <!-- logo -->
         <div class="sign-in-logo gap-2 d-flex">
-          <a class="" href="">
+          <a class="" data-bs-toggle="offcanvas" href="#offcanvasExample">
             <i class="bi bi-cart4"></i>
           </a>
         
@@ -149,11 +149,68 @@
         <div class="container-md p-0">
           <h3 class="p-2">Desktop</h3>
           <div class="product-section d-flex pb-4">
-            <!-- filter side-bar -->
-            <div class="filter bg-body-tertiary p-2 d-none d-lg-block me-3">
 
+            <!-- filter side-bar -->
+            <div class="filter  p-0 d-none d-lg-flex me-3">
+              <section class="processors p-2 filter-group">
+                <p class="mb-2">Processor Type</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="i3">
+                  <label class="form-check-label" for="i3">
+                    Intel i3
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="i5">
+                  <label class="form-check-label" for="i5">
+                    Intel i5
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="i7">
+                  <label class="form-check-label" for="i7">
+                    Intel i7
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="r3">
+                  <label class="form-check-label" for="r3">
+                    Ryzen 3
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="r5">
+                  <label class="form-check-label" for="r5">
+                    Ryzen 5
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="r7">
+                  <label class="form-check-label" for="r7">
+                    Ryzen 7
+                  </label>
+                </div>
+              </section>
+
+              <section class="brand p-2 filter-group">
+                <p class="mb-2">Brand</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="ACER">
+                  <label class="form-check-label" for="ACER">
+                    ACER
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="asus">
+                  <label class="form-check-label" for="asus">
+                    ASUS
+                  </label>
+                </div>
+              </section>
+              
             </div>
 
+            <!-- Product list -->
             <div class="d-flex flex-wrap">
               <div class="container-md d-flex flex-wrap justify-content-center justify-content-lg-start p-0 gap-1 gap-md-2">
               
@@ -170,7 +227,7 @@
                   <div class="card-footer mt-auto">
                     <h5 class="mb-0">&#8369; 17,499.00</h5>
                     <div class="btn-container d-flex gap-1 mt-2">
-                      <button class="btn buy-btn btn-info">Buy Now</button>
+                      <button class="btn buy-btn btn-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Buy Now</button>
                       <button class="btn buy-btn btn-info"><i class="bi-cart-plus"></i></button>
                     </div>
                   </div>
@@ -189,7 +246,7 @@
                   <div class="card-footer mt-auto">
                     <h5 class="mb-0">&#8369; 13,799.00</h5>
                     <div class="btn-container d-flex gap-1 mt-2">
-                      <button class="btn buy-btn btn-info">Buy Now</button>
+                      <button class="btn buy-btn btn-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Buy Now</button>
                       <button class="btn buy-btn btn-info"><i class="bi-cart-plus"></i></button>
                     </div>
                   </div>
@@ -208,7 +265,7 @@
                   <div class="card-footer mt-auto">
                     <h5 class="mb-0">&#8369; 17,399.00</h5>
                     <div class="btn-container d-flex gap-1 mt-2">
-                      <button class="btn buy-btn btn-info">Buy Now</button>
+                      <button class="btn buy-btn btn-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Buy Now</button>
                       <button class="btn buy-btn btn-info"><i class="bi-cart-plus"></i></button>
                     </div>
                   </div>
@@ -227,7 +284,7 @@
                   <div class="card-footer mt-auto">
                     <h5 class="mb-0">&#8369; 17,399.00</h5>
                     <div class="btn-container d-flex gap-1 mt-2">
-                      <button class="btn buy-btn btn-info">Buy Now</button>
+                      <button class="btn buy-btn btn-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Buy Now</button>
                       <button class="btn buy-btn btn-info"><i class="bi-cart-plus"></i></button>
                     </div>
                   </div>
@@ -247,7 +304,7 @@
                   <div class="card-footer mt-auto">
                     <h5 class="mb-0">&#8369; 29,315.00</h5>
                     <div class="btn-container d-flex gap-1 mt-2">
-                      <button class="btn buy-btn btn-info">Buy Now</button>
+                      <button class="btn buy-btn btn-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Buy Now</button>
                       <button class="btn buy-btn btn-info"><i class="bi-cart-plus"></i></button>
                     </div>
                   </div>
@@ -267,7 +324,7 @@
                   <div class="card-footer mt-auto">
                     <h5 class="mb-0">&#8369; 16,799.00</h5>
                     <div class="btn-container d-flex gap-1 mt-2">
-                      <button class="btn buy-btn btn-info">Buy Now</button>
+                      <button class="btn buy-btn btn-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Buy Now</button>
                       <button class="btn buy-btn btn-info"><i class="bi-cart-plus"></i></button>
                     </div>
                   </div>
@@ -287,7 +344,7 @@
                   <div class="card-footer mt-auto">
                     <h5 class="mb-0">&#8369; 28,995.00</h5>
                     <div class="btn-container d-flex gap-1 mt-2">
-                      <button class="btn buy-btn btn-info">Buy Now</button>
+                      <button class="btn buy-btn btn-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Buy Now</button>
                       <button class="btn buy-btn btn-info"><i class="bi-cart-plus"></i></button>
                     </div>
                   </div>
@@ -307,7 +364,7 @@
                   <div class="card-footer mt-auto">
                     <h5 class="mb-0">&#8369; 16,495.00</h5>
                     <div class="btn-container d-flex gap-1 mt-2">
-                      <button class="btn buy-btn btn-info">Buy Now</button>
+                      <button class="btn buy-btn btn-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Buy Now</button>
                       <button class="btn buy-btn btn-info"><i class="bi-cart-plus"></i></button>
                     </div>
                   </div>
@@ -332,10 +389,31 @@
 
           </div>
         </div>
-       
-        
       </section>
       
+      <!-- CART OFFCANVAS -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">CART</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </main>
 
     <div class="container-fluid m-0 p-0">
