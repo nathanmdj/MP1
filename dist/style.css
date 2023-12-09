@@ -12257,6 +12257,19 @@ li {
 .filter .filter-group:last-child {
   flex-grow: 1;
 }
+.filter .price-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 220px;
+}
+.filter .price-filter p {
+  width: 100%;
+}
+.filter .price-filter input {
+  width: 40%;
+}
 .filter .form-check {
   font-size: 14px;
 }
