@@ -78,5 +78,53 @@
 
 }
 
+// cart offcanvas
+.offcanvas-body {
+    
+    .cart-img-container {
+        width: 40%;
 
+        .cart-img {
+            width: 100%;
+        }
+    }
+    
 
+    .cart-item-description, .subtotal {
+        font-weight: 500;
+        font-size: 1.1rem;
+    }
+
+    .item-quantity {
+        width: 60%;
+
+        button {
+            width: fit-content;
+        }
+
+        .delete {
+            background: none;
+            color: rgb(236, 42, 42);
+
+            &:hover {
+                color: rgb(197, 7, 7);
+            }
+        }
+        input {
+            appearance: textfield;
+        }
+    }
+
+    .shopping-btn {
+        
+        
+
+        button {
+            border: none;
+
+            &:hover {
+                background-color: c.$primary;
+            }
+        }
+    }
+}

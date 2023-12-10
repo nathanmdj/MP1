@@ -12277,4 +12277,40 @@ li {
 .filter .form-check input:hover {
   color: rgb(167, 139, 250);
   cursor: pointer;
+}
+
+.offcanvas-body .cart-img-container {
+  width: 40%;
+}
+.offcanvas-body .cart-img-container .cart-img {
+  width: 100%;
+}
+.offcanvas-body .cart-item-description, .offcanvas-body .subtotal {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.offcanvas-body .item-quantity {
+  width: 60%;
+}
+.offcanvas-body .item-quantity button {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.offcanvas-body .item-quantity .delete {
+  background: none;
+  color: rgb(236, 42, 42);
+}
+.offcanvas-body .item-quantity .delete:hover {
+  color: rgb(197, 7, 7);
+}
+.offcanvas-body .item-quantity input {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+.offcanvas-body .shopping-btn button {
+  border: none;
+}
+.offcanvas-body .shopping-btn button:hover {
+  background-color: rgb(167, 139, 250);
 }/*# sourceMappingURL=style.css.map */
