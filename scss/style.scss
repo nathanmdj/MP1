@@ -4,6 +4,9 @@
 @use 'products';
 
 
+.badge {
+    font-size: 10px;
+}
 // menu 
 .menu-items {
     a {
@@ -116,8 +119,6 @@
     }
 
     .shopping-btn {
-        
-        
 
         button {
             border: none;

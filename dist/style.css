@@ -12010,8 +12010,15 @@ li {
   list-style-type: none;
 }
 
+.sign-in-logo #login {
+  margin-bottom: -20px;
+}
 .sign-in-logo i, .sign-in-logo span {
   font-size: 20px;
+  font-style: normal;
+}
+.sign-in-logo i .badge, .sign-in-logo span .badge {
+  font-size: 12px;
 }
 .sign-in-logo a, .sign-in-logo button {
   color: white;
@@ -12222,6 +12229,10 @@ li {
 .btn-info:hover {
   background-color: rgb(167, 139, 250);
   border-color: rgb(167, 139, 250);
+}
+
+.badge {
+  font-size: 10px;
 }
 
 .menu-items a {
