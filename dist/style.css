@@ -12010,9 +12010,6 @@ li {
   list-style-type: none;
 }
 
-.sign-in-logo #login {
-  margin-bottom: -20px;
-}
 .sign-in-logo i, .sign-in-logo span {
   font-size: 20px;
   font-style: normal;
@@ -12231,10 +12228,6 @@ li {
   border-color: rgb(167, 139, 250);
 }
 
-.badge {
-  font-size: 10px;
-}
-
 .menu-items a {
   text-decoration: none;
   color: black;
@@ -12324,4 +12317,48 @@ li {
 }
 .offcanvas-body .shopping-btn button:hover {
   background-color: rgb(167, 139, 250);
+}
+
+.description-header .description-addcart {
+  color: white;
+}
+.description-header .description-addcart:hover {
+  background-color: #333e48;
+}
+
+.description-sidebar li {
+  list-style-type: disc;
+}
+.description-sidebar ul {
+  padding-left: 15px;
+}
+.description-sidebar .card-body {
+  font-size: 14px;
+}
+.description-sidebar .warranty .bi-check2 {
+  color: white;
+}
+.description-sidebar .payment .img-container {
+  display: flex;
+  align-items: center;
+  width: 60px;
+  height: 30px;
+}
+.description-sidebar .payment .img-container img {
+  width: 100%;
+}
+
+.description-body .p-header {
+  font-weight: 500;
+}
+.description-body p {
+  font-size: 13px;
+}
+.description-body li {
+  list-style-type: disc;
+  font-size: 13px;
+}
+.description-body .specifications p {
+  margin-bottom: 0;
+  font-size: 13px;
 }/*# sourceMappingURL=style.css.map */

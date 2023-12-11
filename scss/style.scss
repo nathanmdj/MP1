@@ -4,9 +4,7 @@
 @use 'products';
 
 
-.badge {
-    font-size: 10px;
-}
+
 // menu 
 .menu-items {
     a {
@@ -126,6 +124,74 @@
             &:hover {
                 background-color: c.$primary;
             }
+        }
+    }
+}
+
+// description page
+.description-header {
+    .description-addcart {
+        color: white;
+
+        &:hover {
+            background-color: c.$info;
+        }
+    }
+}
+
+.description-sidebar {
+    li {
+        list-style-type: disc;
+    }
+
+    ul {
+        padding-left: 15px;
+    }
+
+    .card-body {
+        font-size: 14px;
+    }
+
+    .warranty {
+        .bi-check2 {
+            color: white
+        }
+    }
+
+    .payment {
+        .img-container {
+            display: flex;
+            align-items: center;
+            width: 60px;
+            height: 30px;
+            img{
+                width: 100%;
+                
+            }
+        }
+        
+    }
+}
+
+.description-body {
+    .p-header {
+        font-weight: 500;
+    }
+
+    p {
+        font-size: 13px;
+        
+    }
+
+    li {
+        list-style-type: disc;
+        font-size: 13px;
+    }
+
+    .specifications {
+        p {
+            margin-bottom: 0;
+            font-size: 13px;
         }
     }
 }
