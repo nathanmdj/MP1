@@ -12027,6 +12027,10 @@ li {
   color: rgb(167, 139, 250);
 }
 
+.account-logo i {
+  font-size: 28px;
+}
+
 .btn-modal {
   margin-top: 3px;
   background-color: rgb(17, 24, 39);
@@ -12283,6 +12287,13 @@ li {
   cursor: pointer;
 }
 
+.addtocart-modal img {
+  width: 100px;
+}
+.addtocart-modal .cart-total {
+  font-size: 14px;
+}
+
 .offcanvas-body .cart-img-container {
   width: 40%;
 }
@@ -12306,11 +12317,6 @@ li {
 }
 .offcanvas-body .item-quantity .delete:hover {
   color: rgb(197, 7, 7);
-}
-.offcanvas-body .item-quantity input {
-  -webkit-appearance: textfield;
-     -moz-appearance: textfield;
-          appearance: textfield;
 }
 .offcanvas-body .shopping-btn button {
   border: none;

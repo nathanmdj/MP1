@@ -78,7 +78,16 @@
     }  
 
 }
+// ADD to Cart MODAL
+.addtocart-modal {
+    img {
+        width: 100px;
+    }
 
+    .cart-total {
+        font-size: 14px;
+    }
+}
 // cart offcanvas
 .offcanvas-body {
     
@@ -111,9 +120,8 @@
                 color: rgb(197, 7, 7);
             }
         }
-        input {
-            appearance: textfield;
-        }
+
+        
     }
 
     .shopping-btn {
