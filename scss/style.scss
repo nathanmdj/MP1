@@ -195,3 +195,49 @@
         }
     }
 }
+
+// checkout page 
+.checkout-container {
+    form {
+        p {
+            font-weight: 500;
+        }
+        min-width: 320px;
+
+        & > input, label {
+            width: 100%;
+        }
+        
+        & > label {
+            padding-bottom: 10px;
+        }
+
+        & > input {
+            margin-bottom: 10px;
+        }
+
+        .payment-option {
+            img {
+                height: 15px;
+                margin-right: 20px;
+            }
+
+            div {
+                margin-block: 2px;
+            }
+
+            label, input {
+                width: auto;
+            }
+
+            label {
+                margin-right: 30px;
+            }
+        }
+
+        button {
+            color: white;
+        }
+    }
+   
+}

@@ -12361,4 +12361,36 @@ li {
 .description-body .specifications p {
   margin-bottom: 0;
   font-size: 13px;
+}
+
+.checkout-container form {
+  min-width: 320px;
+}
+.checkout-container form p {
+  font-weight: 500;
+}
+.checkout-container form > input, .checkout-container form label {
+  width: 100%;
+}
+.checkout-container form > label {
+  padding-bottom: 10px;
+}
+.checkout-container form > input {
+  margin-bottom: 10px;
+}
+.checkout-container form .payment-option img {
+  height: 15px;
+  margin-right: 20px;
+}
+.checkout-container form .payment-option div {
+  margin-block: 2px;
+}
+.checkout-container form .payment-option label, .checkout-container form .payment-option input {
+  width: auto;
+}
+.checkout-container form .payment-option label {
+  margin-right: 30px;
+}
+.checkout-container form button {
+  color: white;
 }/*# sourceMappingURL=style.css.map */
