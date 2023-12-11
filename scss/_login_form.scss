@@ -1,5 +1,10 @@
 @use 'customs' as c;
 
+.navbar-brand {
+  img {
+    width: 70px;
+  }
+}
 .sign-in-logo {
 
   i, span {
