@@ -12428,4 +12428,16 @@ li {
   font-weight: 500;
   display: flex;
   justify-content: space-between;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+footer .social span {
+  margin-right: 15px;
+}
+@media (max-width: 600px) {
+  footer .visit-us, footer .contact-us, footer .social {
+    width: 240px;
+  }
 }/*# sourceMappingURL=style.css.map */
