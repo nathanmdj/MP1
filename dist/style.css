@@ -12010,10 +12010,6 @@ li {
   list-style-type: none;
 }
 
-.navbar-brand img {
-  width: 70px;
-}
-
 .sign-in-logo i, .sign-in-logo span {
   font-size: 20px;
   font-style: normal;
@@ -12407,4 +12403,29 @@ li {
 }
 .checkout-container form button {
   color: white;
+}
+
+.account-container p {
+  font-size: 14px;
+}
+.account-container h3 {
+  margin: 0;
+}
+.account-container .account-info {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.account-container .account-info .bi-person-circle {
+  font-size: 5rem;
+}
+.account-container .account-info p {
+  margin-bottom: 0;
+}
+.account-container .personal-info {
+  min-width: 350px;
+}
+.account-container .personal-info .acc-header {
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */

@@ -255,3 +255,37 @@
     }
    
 }
+
+// ACCOUNT PAGE
+.account-container {
+    p {
+        font-size: 14px;
+    }
+
+    
+    
+    h3 {
+        margin: 0;
+    }
+    .account-info {
+        height: fit-content;
+        .bi-person-circle {
+            font-size: 5rem;
+        }
+
+        p {
+            margin-bottom: 0;
+            
+        }
+    }
+
+    .personal-info {
+        min-width: 350px;
+
+        .acc-header {
+            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
