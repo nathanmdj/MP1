@@ -20,6 +20,52 @@
     }
 }
 
+// homepage
+.showcase {
+    i {
+        font-size: 1.4rem;
+    }    
+    
+    .product-card {
+        width: 175px;
+        max-height: 440px;
+        
+        .card-body {
+            padding: 10px;
+        }
+        .card-footer {
+            background: none !important;
+            border: none;
+            padding: 10px;
+            padding-top: 0;
+
+            h5{
+                font-weight: 400;
+            }
+        }
+        
+        a, a:visited {
+            color: #000;
+        }
+        
+        .card-img-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: clamp(145px, calc(100px + 10vw), 240px);
+        }
+
+        img {
+            transition: transform 0.3s ease-in-out;
+            object-fit: cover;
+            height: 100%;
+            &:hover {
+                transform: scaleY(1.1) scaleX(1.1);
+            }
+        }
+    }
+}
+
 // carousel
 .c-item {
     height: clamp(240px, 40vw, 420px);

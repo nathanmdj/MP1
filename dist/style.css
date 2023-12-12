@@ -12242,6 +12242,44 @@ li {
   font-size: 1.125rem;
 }
 
+.showcase i {
+  font-size: 1.4rem;
+}
+.showcase .product-card {
+  width: 175px;
+  max-height: 440px;
+}
+.showcase .product-card .card-body {
+  padding: 10px;
+}
+.showcase .product-card .card-footer {
+  background: none !important;
+  border: none;
+  padding: 10px;
+  padding-top: 0;
+}
+.showcase .product-card .card-footer h5 {
+  font-weight: 400;
+}
+.showcase .product-card a, .showcase .product-card a:visited {
+  color: #000;
+}
+.showcase .product-card .card-img-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: clamp(145px, 100px + 10vw, 240px);
+}
+.showcase .product-card img {
+  transition: transform 0.3s ease-in-out;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+.showcase .product-card img:hover {
+  transform: scaleY(1.1) scaleX(1.1);
+}
+
 .c-item {
   height: clamp(240px, 40vw, 420px);
 }
