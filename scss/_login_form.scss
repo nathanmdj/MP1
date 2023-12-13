@@ -44,9 +44,13 @@
   }
 }
 
-.modal-login {
-  max-width: 360px;
+#signin
+{
+  .modal-login {
+    max-width: 360px;
+  }
 }
+
 
 
 // login form
@@ -173,4 +177,13 @@
   font-size: 0.75rem;
   line-height: 1rem;
   color: rgba(156, 163, 175, 1);
+}
+
+// SIGNUP MODAL
+#signup {
+  .form-container {
+    width: clamp(360px, calc(320px + 10vw), 420px) !important;
+    padding-inline: 3rem;
+    padding-bottom: 1.5rem;
+  }
 }

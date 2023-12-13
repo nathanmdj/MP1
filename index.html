@@ -33,7 +33,7 @@
             <i class="bi bi-cart4"></i>
           </a>
         
-          <button class="border-0 bg-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <button class="border-0 bg-secondary" data-bs-toggle="modal" data-bs-target="#signin">
             <i class="bi bi-person"></i>
             <span>Login</span>
           </button>
@@ -91,7 +91,7 @@
   
     <main style="padding-top: 8.5em;" class="bg-body-secondary">
       <!-- Login MODAL -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="signin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="form-container container modal-content modal-body pt-2 modal-login">
               <button type="button" class="btn-modal d-flex justify-content-end border-0" data-bs-dismiss="modal" aria-label="Close">
@@ -135,8 +135,68 @@
                   </button>
               </div>
               <p class="signup">Don't have an account?
-                  <a rel="noopener noreferrer" href="#" class="">Sign up</a>
+                  <a rel="noopener noreferrer" href="" class="" data-bs-toggle="modal" data-bs-target="#signup">Sign up</a>
               </p>
+            </div>
+         
+        </div>
+      </div>
+
+      <!-- Sign Up MODAL -->
+      <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="form-container container modal-content modal-body pt-2 modal-login">
+              <button type="button" class="btn-modal d-flex justify-content-end border-0" data-bs-dismiss="modal" aria-label="Close">
+                  <i class="bi bi-x"></i>
+              </button>
+              <p class="title mb-0">Sign Up</p>         
+              <form class="form">
+                  <div class="input-group">
+                    <label for="firstname">First name</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="" >
+                  </div>
+                  <div class="input-group">
+                    <label for="lastname">Last name</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="" >
+                  </div>
+                  <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="" >
+                  </div>
+                  <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="" >
+                  </div>
+                  <div class="input-group">
+                    <label for="mobile">Mobile number</label>
+                    <input type="tel" name="mobile" id="mobile" placeholder="" >
+                  </div>
+                  <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="">
+                  </div>
+                  <div class="input-group">
+                    <label for="confirm-pass">Confirm Password</label>
+                    <input type="password" name="confirm-pass" id="confirm-pass" placeholder="">
+                  </div>
+                  <button  class="sign mt-3" formaction="index.html">Sign Up</button>
+              </form>
+              <div class="social-message">
+                  <div class="line"></div>
+                  <p class="message">Sign up with social accounts</p>
+                  <div class="line"></div>
+              </div>
+              <div class="social-icons ">
+                  <button aria-label="Log in with Google" class="icon">
+                  <span class="bi bi-google text-white fs-4"></span>
+                  </button>
+                  <button aria-label="Log in with Facebook" class="icon">
+                  <span class="bi bi-facebook text-white fs-4"></span>
+                  </button>
+                  <button aria-label="Log in with Twitter" class="icon">
+                  <span class="bi bi-twitter text-white fs-4"></span>
+                  </button>
+              </div>
             </div>
          
         </div>

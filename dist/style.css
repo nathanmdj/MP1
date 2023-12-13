@@ -12040,7 +12040,7 @@ li {
   font-size: 30px;
 }
 
-.modal-login {
+#signin .modal-login {
   max-width: 360px;
 }
 
@@ -12167,6 +12167,12 @@ li {
   font-size: 0.75rem;
   line-height: 1rem;
   color: rgb(156, 163, 175);
+}
+
+#signup .form-container {
+  width: clamp(360px, 320px + 10vw, 420px) !important;
+  padding-inline: 3rem;
+  padding-bottom: 1.5rem;
 }
 
 @media (min-width: 576px) {
